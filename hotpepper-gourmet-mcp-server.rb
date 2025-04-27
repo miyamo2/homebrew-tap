@@ -5,20 +5,20 @@
 class HotpepperGourmetMcpServer < Formula
   desc ""
   homepage ""
-  version "0.1.0-beta.3"
+  version "0.1.0-beta.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/miyamo2/hotpepper-gourmet-mcp-server/releases/download/v0.1.0-beta.3/hotpepper-gourmet-mcp-server_Darwin_x86_64.tar.gz"
-      sha256 "d0a0e752a10d31b4ebc69aa4d36c6be1e93d0e34f69de5459c1ea1724936bec7"
+      url "https://github.com/miyamo2/hotpepper-gourmet-mcp-server/releases/download/v0.1.0-beta.4/hotpepper-gourmet-mcp-server_Darwin_x86_64.tar.gz"
+      sha256 "7cb909c486722a4c12ddb0ae836c7cb8727b7e590e3bc523ed1eccaf22ff305e"
 
       def install
         bin.install "hotpepper-gourmet-mcp-server"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/miyamo2/hotpepper-gourmet-mcp-server/releases/download/v0.1.0-beta.3/hotpepper-gourmet-mcp-server_Darwin_arm64.tar.gz"
-      sha256 "9bd80b8d6eba34a05a2e7bc8a06fa56d8c616295267b9eb5dc25ec1985dbb13b"
+      url "https://github.com/miyamo2/hotpepper-gourmet-mcp-server/releases/download/v0.1.0-beta.4/hotpepper-gourmet-mcp-server_Darwin_arm64.tar.gz"
+      sha256 "8433b31e94ba867745e9441d234b438aac244a0eea430f5a4a65e6c9d19aa072"
 
       def install
         bin.install "hotpepper-gourmet-mcp-server"
@@ -29,8 +29,8 @@ class HotpepperGourmetMcpServer < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/miyamo2/hotpepper-gourmet-mcp-server/releases/download/v0.1.0-beta.3/hotpepper-gourmet-mcp-server_Linux_x86_64.tar.gz"
-        sha256 "4182ec9baeee47f8806bf2915db8d853f25eb7cc8486a5f7c4e4c894c965348d"
+        url "https://github.com/miyamo2/hotpepper-gourmet-mcp-server/releases/download/v0.1.0-beta.4/hotpepper-gourmet-mcp-server_Linux_x86_64.tar.gz"
+        sha256 "2623c5218f1adf9115466a5240718e8306e90dfa8783dd747d16db13fc23fedb"
 
         def install
           bin.install "hotpepper-gourmet-mcp-server"
@@ -39,8 +39,8 @@ class HotpepperGourmetMcpServer < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/miyamo2/hotpepper-gourmet-mcp-server/releases/download/v0.1.0-beta.3/hotpepper-gourmet-mcp-server_Linux_arm64.tar.gz"
-        sha256 "47ee5b25e4c2fb5a2c35237c4eee3c3c5031539980a0f3a75e7eb0e02b58c5bd"
+        url "https://github.com/miyamo2/hotpepper-gourmet-mcp-server/releases/download/v0.1.0-beta.4/hotpepper-gourmet-mcp-server_Linux_arm64.tar.gz"
+        sha256 "6b1a474e8b23836ae4f7539868ee227994635483aa07266a419cfb5a222d13ec"
 
         def install
           bin.install "hotpepper-gourmet-mcp-server"

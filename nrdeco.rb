@@ -5,20 +5,20 @@
 class Nrdeco < Formula
   desc ""
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/miyamo2/nrdeco/releases/download/v0.1.0/nrdeco_Darwin_x86_64.tar.gz"
-      sha256 "f7a13684ba59847c62cfcb3550187181609ed532708ad55d18e888b3de9536a7"
+      url "https://github.com/miyamo2/nrdeco/releases/download/v0.1.1/nrdeco_Darwin_x86_64.tar.gz"
+      sha256 "238e1fca8a2e9fef76849fb33590506853ad73c05dd694444c39f4a491dcd912"
 
       def install
         bin.install "nrdeco"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/miyamo2/nrdeco/releases/download/v0.1.0/nrdeco_Darwin_arm64.tar.gz"
-      sha256 "ad4d95d32a09523f92cc852294f490900cf3eeda5a42ba302b45c6fe43d48a11"
+      url "https://github.com/miyamo2/nrdeco/releases/download/v0.1.1/nrdeco_Darwin_arm64.tar.gz"
+      sha256 "47222fd841f9f1e5186b46fa28151b1e9bd3fd9f37036e7f657df9c6a1f06de0"
 
       def install
         bin.install "nrdeco"
@@ -28,15 +28,15 @@ class Nrdeco < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/miyamo2/nrdeco/releases/download/v0.1.0/nrdeco_Linux_x86_64.tar.gz"
-      sha256 "3eb4859638ec9293d9e3282b93230a0983a3108042cd204b0a463f83ffcdcc4f"
+      url "https://github.com/miyamo2/nrdeco/releases/download/v0.1.1/nrdeco_Linux_x86_64.tar.gz"
+      sha256 "48fac4d6ebb0cc9738eb8d10dcfeda20870bf6ce643b7c5b3ce1cc1e2d24e4c5"
       def install
         bin.install "nrdeco"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/miyamo2/nrdeco/releases/download/v0.1.0/nrdeco_Linux_arm64.tar.gz"
-      sha256 "9d7bd256e11f4bb6fe0882718e5439940357b92825a7c2058d30801345910d50"
+      url "https://github.com/miyamo2/nrdeco/releases/download/v0.1.1/nrdeco_Linux_arm64.tar.gz"
+      sha256 "6ea3498e8de7c7757406e150f501d4048c2bdfcec443c8753895f4f2d3b28845"
       def install
         bin.install "nrdeco"
       end

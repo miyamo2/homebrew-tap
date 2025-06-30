@@ -5,20 +5,20 @@
 class TagcaseAnalyzer < Formula
   desc ""
   homepage ""
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/miyamo2/tagcase/releases/download/v0.1.1/tagcase-analyzer_Darwin_x86_64.tar.gz"
-      sha256 "896f069bea071b41333bc13c0215f4f73d7c48dbaa4edb126a02b6c27cce632b"
+      url "https://github.com/miyamo2/tagcase/releases/download/v0.1.2/tagcase-analyzer_Darwin_x86_64.tar.gz"
+      sha256 "520c47de8e5a905f42ed17e52c23be28940bb8023a76e2612168297c62324002"
 
       def install
         bin.install "tagcase-analyzer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/miyamo2/tagcase/releases/download/v0.1.1/tagcase-analyzer_Darwin_arm64.tar.gz"
-      sha256 "9d9405b8fc00f0b9bb953decc3563067f2a4ea6098f91a9368f599a2e1abcbff"
+      url "https://github.com/miyamo2/tagcase/releases/download/v0.1.2/tagcase-analyzer_Darwin_arm64.tar.gz"
+      sha256 "ccd578e881a5445c280c1235a315323d4e94046db68911fe7b53bfa79fdad5bc"
 
       def install
         bin.install "tagcase-analyzer"
@@ -28,15 +28,15 @@ class TagcaseAnalyzer < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/miyamo2/tagcase/releases/download/v0.1.1/tagcase-analyzer_Linux_x86_64.tar.gz"
-      sha256 "e8d8ea57cd60d74c992929a4194605dcfb75674abfdc72e013f3482b945e6350"
+      url "https://github.com/miyamo2/tagcase/releases/download/v0.1.2/tagcase-analyzer_Linux_x86_64.tar.gz"
+      sha256 "1d3d307a90a6c2170e9b62791dd9cf78326211a465ed61c1c946ba84713e7c8b"
       def install
         bin.install "tagcase-analyzer"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/miyamo2/tagcase/releases/download/v0.1.1/tagcase-analyzer_Linux_arm64.tar.gz"
-      sha256 "b3f756ff2013a756e3211bf9ace12ee71b08beba2000c016f702a69470b6aba4"
+      url "https://github.com/miyamo2/tagcase/releases/download/v0.1.2/tagcase-analyzer_Linux_arm64.tar.gz"
+      sha256 "f063d0dc707de0a4d9403832a431dabb40cb42049bf103254e62260ec220e244"
       def install
         bin.install "tagcase-analyzer"
       end

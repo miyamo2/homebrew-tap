@@ -5,21 +5,21 @@
 class Braider < Formula
   desc "A go vet analyzer that resolves DI bindings and generates wiring code automatically"
   homepage "https://github.com/miyamo2/braider"
-  version "0.1.2"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/miyamo2/braider/releases/download/v0.1.2/braider_0.1.2_darwin_amd64.tar.gz"
-      sha256 "63286c7cece143c7bb11e5d1a8c1673cdf54af758c7991643171d4f99d6d9d6f"
+      url "https://github.com/miyamo2/braider/releases/download/v0.2.0/braider_0.2.0_darwin_amd64.tar.gz"
+      sha256 "9a233f0f0d92e6ed71250c7dc786b3e6e6653ee2934a98f70b316ef42c7c1fc4"
 
       define_method(:install) do
         bin.install "braider"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/miyamo2/braider/releases/download/v0.1.2/braider_0.1.2_darwin_arm64.tar.gz"
-      sha256 "224e79f2fee677631cf52a7a809889db335d09b66f69c9d5c4cc957c33a9c9fb"
+      url "https://github.com/miyamo2/braider/releases/download/v0.2.0/braider_0.2.0_darwin_arm64.tar.gz"
+      sha256 "56b6c140ef0c988d04d47fac91a67df47f994b8f648535ac69e0e008b128f058"
 
       define_method(:install) do
         bin.install "braider"
@@ -29,15 +29,15 @@ class Braider < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/miyamo2/braider/releases/download/v0.1.2/braider_0.1.2_linux_amd64.tar.gz"
-      sha256 "ceec882682338e9f90d564b7d4dfc63eea52f621d3f5ce44e7678a398d539fe9"
+      url "https://github.com/miyamo2/braider/releases/download/v0.2.0/braider_0.2.0_linux_amd64.tar.gz"
+      sha256 "1dbf89da8ebb2afaf192243f2ef6531eaefff6c92a80facde36bbc5faab184d8"
       define_method(:install) do
         bin.install "braider"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/miyamo2/braider/releases/download/v0.1.2/braider_0.1.2_linux_arm64.tar.gz"
-      sha256 "6beaa183acf2d4214a9995bacffdaf1c6ee5d931c4a09a35a6351264f3e2b5e7"
+      url "https://github.com/miyamo2/braider/releases/download/v0.2.0/braider_0.2.0_linux_arm64.tar.gz"
+      sha256 "114f99155b37f295b0409f729819c9f1204338f011055265b35a08d76966423f"
       define_method(:install) do
         bin.install "braider"
       end
